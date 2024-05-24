@@ -23,8 +23,9 @@
             $count = mysqli_num_rows($result);  
             
             if($count == 1){  
-                echo "<center><h1>Login successful</h1></center>";
-                echo "<center><a href='http://localhost/Trabajo_final_curso/Panel_administrador/Panel/index.html'><button>Access to the Panel.</button></a></center>";
+                // redirect to the admin panel
+                header('Location: http://localhost/Trabajo_final_curso/Panel_administrador/Panel/index.html');
+                exit();
             }  
             else{  
                 echo "<h1> Login failed. Invalid username or password, consult with administrator.</h1>";  

@@ -10,7 +10,7 @@
     $triggerForActivation = $_POST['triggerForActivation'];
 
     if ($stmt->execute()) {
-        echo "Configuration changed successfully.";
+        echo "<h2>Configuration changed successfully.</h2>";
     } else {
         echo "Error: " . $stmt->error;
     }
